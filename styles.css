@@ -9,18 +9,20 @@
 }
 
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 body {
   background-color: var(--background-color);
   color: var(--text-color);
   font-family: var(--font-family);
+
   display: flex;
   justify-content: center;
   align-items: start;
+
   height: 100vh;
   gap: 27px;
   padding: 56px 0;
@@ -39,8 +41,8 @@ aside {
   flex-direction: column;
   gap: 40px;
   margin-top: 80px;
-  list-style-type: none;
   align-items: center;
+  list-style-type: none;
 }
 
 .lista-links li a {
@@ -59,8 +61,8 @@ aside {
 
 .link-destaque {
   border: 1px solid var(--primary-color);
-  border-radius: 8px;
   padding: 12px 30px;
+  border-radius: 8px;
 }
 
 main {
@@ -100,11 +102,12 @@ textarea {
   font-family: var(--font-family);
   line-height: 22.5px;
 }
+
 form div input {
   height: 39px;
 }
 
-textarea {
+texarea {
   height: 161px;
 }
 
@@ -167,7 +170,7 @@ textarea {
 
 .botao-publicar::after {
   content: "";
-  background-image: url("./img/arrow_forward2.svg");
+  background-image: url("../img/arrow_forward2.svg");
   background-size: contain;
   background-repeat: no-repeat;
   width: 15px;
@@ -188,34 +191,37 @@ textarea {
   height: 100%;
   object-fit: cover;
 }
+
 .container-imagem {
   height: 368px;
   padding: 24px 16px;
   background-color: var(--secondary-color);
   border-radius: 8px;
 }
+
 .container-upload-imagem button {
   margin: 16px 0 8px 0;
   background-color: var(--itens-background);
-  color: var(--secondary-color);
   border: 1px solid var(--secondary-color);
   border-radius: 8px;
+  color: var(--secondary-color);
   width: 100%;
   text-align: center;
   padding: 12px;
-  font-size: 18px;
-  font-weight: 600;
   font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 18px;
   position: relative;
 }
+
 .container-upload-imagem button::after {
   content: "";
   background-image: url("./img/upload.svg");
   background-size: contain;
   background-repeat: no-repeat;
+  display: inline-block;
   width: 15px;
   height: 15px;
-  display: inline-block;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
